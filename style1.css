@@ -1,0 +1,142 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Container Styles */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 20px; /* Increased padding for better spacing */
+}
+
+/* To-Do App Styles */
+.todo-app {
+  width: 100%;
+  max-width: 600px; /* Increased max-width for a wider box */
+  background: #fff;
+  margin: 30px auto; /* Adjusted margin for centering */
+  padding: 30px; /* Reduced padding for a more compact look */
+  border-radius: 15px; /* Increased border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+  border: 1px solid #ddd; /* Light border for subtle outline */
+}
+
+/* Heading Styles */
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 24px; /* Increased font-size for the heading */
+}
+
+/* Icon Styles */
+.todo-app h2 img {
+  width: 35px; /* Slightly larger icon */
+  margin-left: 10px;
+}
+
+/* Row Styles */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0f4f8; /* New background color for the row */
+  border-radius: 10px; /* Increased border-radius for rounded corners */
+  padding: 10px 20px; /* Adjusted padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  border: 1px solid #ddd; /* Light border for subtle outline */
+}
+
+/* Input Styles */
+input {
+  flex: 1;
+  border: 1px solid #ccc; /* Lighter border color */
+  border-radius: 5px; /* Rounded corners for input */
+  outline: none;
+  background: #fff; /* White background for input */
+  padding: 10px;
+  font-size: 16px; /* Adjusted font-size for readability */
+}
+
+/* Button Styles */
+button {
+  border: none;
+  outline: none;
+  padding: 12px 25px; /* Adjusted padding for button */
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px; /* Rounded corners for the button */
+  transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background: #e8493d; /* Darker color on hover */
+}
+
+
+/* List Item Styles */
+ul li {
+  list-style: none;
+  font-size: 18px; /* Increased font-size for list items */
+  padding: 15px 10px 15px 50px; /* Adjusted padding for better spacing */
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #eee; /* Added border between items */
+}
+
+/* List Item Before Pseudo-element */
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 30px; /* Increased size */
+  width: 30px; /* Increased size */
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%); /* Centered vertically */
+}
+
+/* Checked List Item Styles */
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+/* Checked List Item Before Pseudo-element */
+ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+
+/* Span Styles */
+ul li span {
+  position: absolute;
+  right: 10px; /* Adjusted position */
+  top: 50%;
+  width: 30px; /* Adjusted size */
+  height: 30px; /* Adjusted size */
+  font-size: 18px; /* Adjusted font-size */
+  color: #555;
+  line-height: 30px; /* Adjusted line-height */
+  text-align: center;
+  border-radius: 50%;
+  background: #eee; /* Light background for span */
+  transition: background 0.3s; /* Smooth transition for hover effect */
+}
+
+
+
+ul li span:hover {
+  background: #ddd; /* Darker background on hover */
+}
